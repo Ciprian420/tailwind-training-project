@@ -1,7 +1,7 @@
-<app-dashboard *ngIf="router.url === '/information' || router.url === '/products' || router.url === '/calendar' || router.url === '/profile'|| router.url === '/product-info' || router.url === '/users' || router.url === '/faq'" (isLogout)="handleLogout()"></app-dashboard>
+<app-dashboard *ngIf="router.url !== '/login' && router.url !== '/register'" (isLogout)="handleLogout()"></app-dashboard>
 <main>
   <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-10">
     <router-outlet></router-outlet>
   </div>
 </main>
-<app-footer *ngIf="router.url === '/information' || router.url === '/products' || router.url === '/calendar' || router.url === '/profile'|| router.url === '/product-info' || router.url === '/users' || router.url === '/faq'"></app-footer>
+<app-footer *ngIf="router.url !== '/login' && router.url !== '/register'"></app-footer>
