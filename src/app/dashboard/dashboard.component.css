@@ -1,0 +1,18 @@
+.show{
+animation-name: show;
+animation-duration: 0.3s;
+}
+.hide{
+  animation-name: hide;
+  animation-duration: 0.3s;
+}
+
+
+@keyframes show {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes hide {
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
